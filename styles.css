@@ -4,7 +4,7 @@
     width: 100%;
 }
 
-
+/* home page*/
 .bg-image{
     background-image: url("homepage.jpg");
     background-size:cover;
@@ -63,4 +63,386 @@ h1{
     grid-template-columns: auto;
 }
 
+/* scene 1*/
+.scene1{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-image: url('first-scene.jpg');
+    background-size:cover;
+}
 
+
+.lower-sec{
+ display: grid;
+ grid-template-rows: 80% auto;
+ visibility: visible;
+}
+
+.pics{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.dialog{
+    display: flex;
+    flex-direction: column;
+    color: black;
+    background-color: rgb(255, 255, 255,.3);
+    padding-left: 1rem;
+    padding-right: 5rem;
+    
+}
+img{
+    width: 45rem;
+    height: 38.1rem;
+}
+.hammer{
+    position: absolute;
+    width: 4rem;
+    height: 4rem;
+    left: 10rem;
+    mix-blend-mode:darken;
+}
+.A{
+    position: absolute;
+    width: 4rem;
+    height: 4rem;
+    left: 60rem;
+    mix-blend-mode:multiply;
+}
+.boots{
+    position: absolute;
+    width: 4rem;
+    height: 4rem;
+    left: 57.5rem;
+    top: 16.4rem;
+    mix-blend-mode:difference;
+}
+.cup{
+    position: absolute;
+    width: 5rem;
+    height: 5rem;
+    left: 34.8rem;
+    top: 24.2rem;
+    mix-blend-mode:overlay;
+}
+.feather{
+    position: absolute;
+    width: 4rem;
+    height: 4rem;
+    left: 70rem;
+    top: 27rem;
+    mix-blend-mode:overlay;
+}
+.mask{
+    position: absolute;
+    width: 5rem !important;
+    height: 4rem !important;
+    left: 49rem !important;
+    top: 21rem !important;
+    mix-blend-mode:lighten !important;
+}
+.knife{
+    position: absolute;
+    width: 4rem;
+    height: 4rem;
+    left: 75.2rem;
+    top: 11rem;
+    mix-blend-mode:multiply;
+}
+
+/* maze   */
+.maze{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    background-image: url('maze.jpg');
+    background-size:cover;
+    display: flex;
+    flex-direction: column;
+}
+.choices{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(246, 237, 237,.1);
+    height: 6rem;
+    color: white;
+    font-size: 1.5rem;
+}
+
+
+.choices button{
+   width: .5rem !important;
+   height: .5rem !important;
+   font-size: 2rem !important;
+   margin-left: 4rem !important;
+}
+
+
+/* snow forest  */
+.snow{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    background-image: url('snoy-forest.jpg');
+    background-size:cover;
+    flex-direction: column;
+    
+}
+.snow .lower-sec{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    
+}
+.snow h5{
+    position:absolute; 
+    color: white;    
+}
+.snow .door{
+    position:absolute; 
+    background-color: rgb(57,76,132,.3);  
+    width: 4rem; 
+    height: 10rem;
+    left: 47.5rem;
+    top: 21rem;
+    z-index: 2;
+}
+
+/* scene 2 */
+.scene2{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-image: url('hunter-house.jpg');
+    background-size:cover;    
+}
+.scene2 .lower-sec img{
+    height: 38rem;
+}
+
+.scene2 .dialog{
+    font-size: larger;
+    position: absolute;
+    bottom: 0;
+    height: 5rem;
+    width: 74rem;
+}
+.axe{
+    position: absolute;
+    width: 4rem;
+    height: 4rem;
+    left: 46rem;
+    mix-blend-mode:overlay;
+}
+.brush{
+    position: absolute;
+    width: 4rem;
+    height: 4rem;
+    top: 1rem;
+    left: 65rem;
+    mix-blend-mode:multiply;
+}
+.rabbit{
+    position: absolute;
+    width: 4rem;
+    height: 4rem;
+    left: 57.5rem;
+    top: 16.4rem;
+    mix-blend-mode:difference;
+}
+.tower{
+    position: absolute;
+    width: 5rem;
+    height: 5rem;
+    left: 34.8rem;
+    top: 24.2rem;
+    mix-blend-mode:multiply;
+}
+.watch{
+    position: absolute;
+    width: 4rem;
+    height: 4rem;
+    left: 75rem;
+    top: 20rem;
+    mix-blend-mode:color-burn;
+}
+.pen{
+    position: absolute;
+    width: 5rem !important;
+    height: 4rem !important;
+    left: 65rem !important;
+    top: 21rem !important;
+    mix-blend-mode:multiply !important;
+}
+
+/* wolf appear page*/
+.wolf{
+    width: 100%;
+    height: 100%;
+    background-image: url('wolf-appear.jpg');
+    background-size:contain;    
+}
+.wolfChoices{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 7rem;
+    justify-content: space-between;
+    align-items: center;
+}
+/* kill wolf */
+.killWolf{
+    width: 100%;
+    height: 100%;
+    background-image: url('kill-wolf.jpg');
+    background-size:cover;   
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+/* run wolf */
+.runWolf{
+    width: 100%;
+    height: 100%;
+    background-image: url('player-death.jpg');
+    background-size:cover;   
+    display: flex; 
+    text-align: left;
+}
+
+/* scene 3*/
+.scene3{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-image: url('forest.jpg');
+    background-size:cover;    
+}
+
+.scene3 .dialog{
+    font-size: larger;
+    position: absolute;
+    bottom: 0;
+    height: 5rem;
+    width: 74rem;
+}
+.ring{
+    position: absolute;
+    width: 3rem;
+    height: 3rem;
+    left: 48rem;
+    mix-blend-mode:color-burn;
+}
+.bat{
+    position: absolute;
+    width: 3rem;
+    height: 3rem;
+    top: 5.5rem;
+    left: 47rem;
+}
+.pumkin{
+    position: absolute;
+    width: 4rem;
+    height: 4rem;
+    left: 63.5rem;
+    top: 27rem;
+    mix-blend-mode:difference;
+}
+.bird{
+    position: absolute;
+    width: 3rem;
+    height: 3rem;
+    left: 30rem;
+    top: 5rem;
+    mix-blend-mode:color-dodge;
+}
+.dwarf{
+    position: absolute;
+    width: 4rem;
+    height: 4rem;
+    left: 52rem;
+    top: 21.5rem;
+    mix-blend-mode:soft-light;
+}
+.star{
+    position: absolute;
+    width: 6rem !important;
+    height: 1.5rem !important;
+    left: 46rem !important;
+    top: 33.5rem !important;
+    mix-blend-mode:color-dodge !important;
+}
+/* WolfApear magic forest page*/
+.WolfApear{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    background-image: url('wolf-appaer3.jpg');
+    background-size:cover;
+    flex-direction: column;
+}
+.hand{
+    position: absolute;
+    width: 20rem;
+    height: 38rem;
+    left: 5rem;
+    display: none;
+}
+/*  wolf human */
+.wolfHuman{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    background-image: url('forest.jpg');
+    background-size:cover;
+    flex-direction: column;
+}
+.wolfHuman .dialog{
+    font-size: larger;
+    position: absolute;
+    bottom: 0;
+    height: 5rem;
+    width: 74rem;
+}
+.boy{
+    width: 20rem;
+}
+/* mansion */
+
+.mansion{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    background-image: url('mansion.jpg');
+    background-size:cover;
+    flex-direction: column;
+}
+.mansion .dialog{
+    font-size: larger;
+    position: absolute;
+    bottom: 0;
+    height: 5rem;
+    width: 74rem;
+}
+/* laugh*/
+.laugh{
+        display: flex;
+        width: 100%;
+        height: 100%;
+        background-image: url('evil-smile.gif');
+        background-size:cover;
+    
+}
+/* End*/
+.continue{
+    display: flex;
+    justify-content: center ;
+    align-items: center ;
+    text-align: center ;
+    background-image: url('bg1.jpg') ;
+    width: 100%;
+    height: 100%;
+    background-size:cover;
+}
